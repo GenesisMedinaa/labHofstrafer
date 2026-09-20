@@ -3,14 +3,14 @@
 #include <catch2/benchmark/catch_constructor.hpp>
 #include <catch2/generators/catch_generators_range.hpp>
 
-#include "../src/factorial.hpp"
+#include "../src/Hofstraf.hpp"
 
 TEST_CASE( "it computes the factorial of different numbers" ) {
-    REQUIRE( factorial(0) == 1 );
-    REQUIRE( factorial(1) == 1 );
-    REQUIRE( factorial(2) == 2 );
-    REQUIRE( factorial(3) == 6 );
-    REQUIRE( factorial(10) == 3628800 );
+    REQUIRE( gNaive(0) == 1 );
+    REQUIRE( gNaive(1) == 1 );
+    REQUIRE( gNaive(2) == 2 );
+    REQUIRE( gNaive(3) == 6 );
+    REQUIRE( gNaive(10) == 3628800 );
 }
 
 TEST_CASE("benchmarking the factorial function") {
