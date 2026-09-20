@@ -15,7 +15,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(factorial_test tests/factorial_test.cpp src/factorial.cpp)
-add_executable(main main.cpp src/factorial.cpp)
+add_executable(HofstadterG_test tests/Hofstraf_test.cpp src/Hofstraf.cpp)
+add_executable(main main.cpp src/Hofstraf.cpp)
 
-target_link_libraries(factorial_test PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(HofstadterG_test PRIVATE Catch2::Catch2WithMain)

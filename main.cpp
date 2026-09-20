@@ -2,13 +2,12 @@ using namespace std;
 #include <iostream>
 #include <cmath>
 
-#include "Hofstraf.hpp"
+int gNaive(int n);
 
 int main(){
-     
-    int n;
-    cout << "Enter a number: ";
-    cin >> n;
-    cout << "Result for " << n << " is: " << gNaive(n) << endl;
+    
+    for (int n = 0; n <= 10; n++) {
+        cout << "gNaive(" << n << ") = " << gNaive(n) << endl;
+    }
     return 0;
 }
